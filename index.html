@@ -21,8 +21,9 @@
             <p>Preencha o formulário abaixo para agendar a sua mentoria.</p>
         </header>
         
-        <form id="my-form">               
-            <fieldset>
+        <form id="my-form">
+
+            <fieldset class="information">
                 <legend>INFORMAÇÕES PESOAIS</legend>
                 <div class="line"></div>
             
@@ -46,10 +47,68 @@
                     <label for="password">Senha <span>(mínimo 8 caracteres)</span></label>
                     <input type="password" id="password">            
                 </div>
+            </fieldset>
+            
+            <fieldset class="mentor">
+                <legend>INFORMAÇÕES DO MENTOR</legend>
+                <div class="line"></div>
+            
+                <div class="mentor-wrapper">             
+                    <label for="mentorName">Nome do seu mentor <span>(apenas o primeiro nome)</span></label>
+                    <input type="text" id="mentorName">
+                </div>                    
+            </fieldset>
 
+            <fieldset class="date-time">
+                <legend>SEUS HORÁRIO DISPONÍVEÍS</legend>
+                <div class="line"></div>
 
-            </fieldset>    
+                <h2>Primeira mentoria</h2>
+            
+                <div class="date-wrapper">             
+                    <div class="date">
+                        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="date">
+                    </div>             
+                    <div class="begin">  
+                        <label for="begin">Das</label>
+                        <input type="time" id="begin">
+                    </div>
+                    <div class="end">  
+                        <label for="end">Até</label>
+                        <input type="time" id="end">
+                    </div>
+                </div>
+
+                <h2>Segunda mentoria</h2>
+            
+                <div class="date-wrapper">             
+                    <div class="date">
+                        <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" id="date">
+                    </div>             
+                    <div class="begin">  
+                        <label for="begin">Das</label>
+                        <input type="time" id="begin">
+                    </div>
+                    <div class="end">  
+                        <label for="end">Até</label>
+                        <input type="time" id="end">
+                    </div>
+                </div>
+                
+                
+            </fieldset>          
+                      
         </form>
+
+        <footer>
+            <input
+             class="button"
+             type="submit"
+             form="my-form"
+             value="SALVAR">
+        </footer>
 
     </div>
 </body>
